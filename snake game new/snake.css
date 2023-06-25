@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Acme', cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: white;
+}
+
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ background: #D5CCCA;
+  background: white;
+}
+
+.scores {
+  color: red;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #48466D;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: gold;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.field {
+  background: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #48466D;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  grid-gap: 1px;
+}
+
+.food {
+  background-image: url(food.svg);
+  border-radius: 20%;
+}
+
+.head {
+  background-image: url(snake.svg);
+  border-radius: 20%;
+  background-size: cover;
+}
+
+.tail {
+  background: green;
+  border-radius: 25%;
+}
+
+.cell{
+  border: 1px solid grey;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.start-game, .reset-game {
+    width: 100px;
+    height: 50px;
+    color: gold;
+    background-color: black;
+    cursor: pointer;
+}
